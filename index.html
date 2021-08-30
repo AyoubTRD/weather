@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kaisei+Decol&family=Lato:ital@1&family=Roboto:wght@300&family=Urbanist:wght@500&display=swap" rel="stylesheet"></head>
+<body>
+    <div class="loading">
+        <div class="lds-dual-ring"></div>
+    </div>
+
+    <form class="Hiddendiv" id="search">
+        <input class="inp-1" type="text" placeholder="Some city...">
+        <button class="btn"><ion-icon name="search-outline"></ion-icon></button>
+    </form>
+    <section class="body">
+       <section id="right-section">
+            <nav>
+                <h3 id="title">
+                    the weather
+                </h3>
+            </nav>
+            <div class="Parent1">
+                <div class="child1">
+                    <h1 class="h-1-1" id="temp">
+                        16°
+                    </h1>
+                </div>
+                <div class="child2">
+                    <h1 class="h-1-2" id="cityName">
+                        London
+                    </h1>
+                    <p class="pof1" id="time">
+                        06:09-Monday, 9 Sep '19
+                    </p>
+                </div>
+                <div class="child3">
+                    <img id="icon" src="img/cloud.png" alt="">
+                    <p class="pof2" id="description">Cloudy</p>
+                </div>
+            </div>
+               
+
+           
+       </section>
+       <section id="left-section">
+            <button class="button1" id="search-btn"><ion-icon name="search-outline"><ion-icon></button>
+           <div class="Parent2">
+               <div class="child2-1">
+                <h4 class="h4_1">Another location</h4>
+                </div class="child2-2">
+                   <div class="child2-1-1">
+                   <p class="p"><a href="#" data-city="Dubaï" class="city-link">Dubaï</a></p>
+                   <p class="p"><a href="#" data-city="Manchester"  class="city-link">Manchester</a></p>
+                   <p class="p"><a href="#" data-city="New York" class="city-link">New York</a></p>
+                   <p class="p"><a href="#" data-city="California" class="city-link">California</a></p>
+                
+               </div>
+               <div>
+                  
+                  <h2 class="H2-1">
+                      Weather details
+                 </h2>
+                 <div class="child2-1-2">
+                 <p class="p1">Cloudy</p>
+                 <p class="p2" id="clouds">86%</p>
+                 <p class="p3">Humidity</p>
+                 <p class="p4" id="humidity">62%</p>
+                 <p class="p5">Wind</p>
+                 <p class="p6" id="wind">8Km/h</p>
+               </div>
+            </div>
+          
+    
+           </div>
+       </section>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/index.js"></script>
+</body>
+</html>
